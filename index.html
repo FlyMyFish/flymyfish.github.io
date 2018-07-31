@@ -4,15 +4,35 @@
     <meta charset="UTF-8">
     <title>FlyMyFish.GitHub.IO</title>
     <link rel="stylesheet" type="text/css" href="css/zzsc.css">
+    <link rel="icon" href="https://github.com/fluidicon.png" type="image/x-icon"/>
 </head>
 <body>
-<div class="zzsc-content">
-    <canvas id="clockNow" width="200px" height="200px"></canvas>
+<div style="width: 100%; height: 100%;">
+    <!--星空，流星，背景 js/canvas_starry_sky.js-->
+    <canvas id="cns_sky" width="500px" height="500px" style="position: absolute">
+    </canvas>
+    <!--时钟背景-->
+    <div class="zzsc-content" style="position: absolute">
+        <canvas id="clockNow" width="200px" height="200px"></canvas>
+    </div>
+    <div class="column_parent" style="left: 250px; top: 100px;">
+        <div class="column_title" onclick="javascript:location.href='https://www.jianshu.com/u/6648962dc7e2'">简书</div>
+        <div class="column_divider" style="top: 45px;"></div>
+        <div class="column_title" style="top: 46px;" onclick="javascript:location.href='https://blog.csdn.net/u013581141'">CSDN</div>
+        <div class="column_divider" style="top: 91px;"></div>
+        <div class="column_title" style="top: 92px;" onclick="javascript:location.href='https://github.com/FlyMyFish'">github</div>
+        <div class="column_divider" style="top: 137px;"></div>
+        <div class="column_title" style="top: 138px;">简书</div>
+        <div class="column_divider" style="top: 183px;"></div>
+    </div>
 </div>
 <script src="js/canvas_clock.js">
 </script>
+<script src="js/canvas_starry_sky.js">
+</script>
 <script>
-    clockNow={
+
+    clockNow = {
         "indicate": true,
         "indicate_color": "#222",
         "dial1_color": "#666600",
@@ -24,7 +44,8 @@
     };
     var c = document.getElementById('clockNow');
     cns = c.getContext('2d');
-    clock_planets(200,cns,clockNow);
+    clock_planets(200, cns, clockNow);
+
 </script>
 </body>
 </html>
