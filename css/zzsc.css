@@ -12,29 +12,26 @@ a:hover,a:focus{color:#74777b;text-decoration: none;}
 .zzsc-content{
 	padding: 1em;
 }
-.column_title:hover{
-	width: 260px;
-	height: 45px;
-	background: #ffffff90;
-	position: absolute;
-	text-align: center;
-	line-height: 45px;
-}
+
 .column_title{
-	width: 260px;
-	height: 45px;
-	background: #ffffff60;
+	width: 200px;
+	height: 200px;
 	position: absolute;
 	text-align: center;
-	line-height: 45px;
-}
-.column_divider{
-	position: absolute;
-	width: 260px;
-	height: 1px;
-	background: #ffffff90;
+	line-height: 200px;
+	font-size: 40px;
+	color:white;
+	cursor:pointer;
 }
 .column_parent{
-	width: 260px;
+	width: 400px;
+	height: 400px;
+	top:50%;
+	left:50%;
 	position: absolute;
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
 }
