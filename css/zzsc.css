@@ -37,7 +37,6 @@ a:hover,a:focus{color:#74777b;text-decoration: none;}
 }
 .open_part_parent{
 	width: 300px;
-	left: 150px;
 	top: 300px;
 	background: #ffffffcc;
 	height: 45px;
@@ -47,13 +46,25 @@ a:hover,a:focus{color:#74777b;text-decoration: none;}
 	text-align:center;
 	font-size: 20px;
 	color:white;
-	cursor:pointer;
+	cursor:default;
 }
 .open_part_title{
 	width: 300px;
-	left: 150px;
 	top: 300px;
 	background: #ffffff60;
+	height: 45px;
+	position: absolute;
+	border-radius: 5px;
+	line-height: 45px;
+	text-align:center;
+	font-size: 20px;
+	color:white;
+	cursor:pointer;
+}
+.open_part_title:hover{
+	width: 300px;
+	top: 300px;
+	background: #ffffff11;
 	height: 45px;
 	position: absolute;
 	border-radius: 5px;
